@@ -1,1 +1,1 @@
-​
+XOR ^ has a property that when two same number are XORed it results in 0.
