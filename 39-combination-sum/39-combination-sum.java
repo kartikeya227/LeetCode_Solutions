@@ -3,7 +3,7 @@ class Solution {
         Set<List<Integer>> combi = new HashSet<>();
         
         for(int i=0; i<candidates.length; i++){
-            dfs(combi, new LinkedList<Integer>(), i, 0, candidates, target);
+            dfs(combi, new ArrayList<Integer>(), i, 0, candidates, target);
         }
         return combi.stream().collect(Collectors.toList());
     }
