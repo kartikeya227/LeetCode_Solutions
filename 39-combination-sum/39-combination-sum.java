@@ -16,6 +16,8 @@ class Solution {
             return false;
         }
         for(int i=k; i<candidates.length; i++){
+            if((sum+candidates[i])>target)
+                continue;
             tempList.add(candidates[i]);
             sum += candidates[i];
             dfs(combi, tempList, i, sum, candidates, target);
