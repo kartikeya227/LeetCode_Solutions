@@ -10,7 +10,7 @@ class Solution {
     
     boolean dfs(Set<List<Integer>> combi, List<Integer>tempList, int k, int sum, int[] candidates, int target){
         if(sum==target){
-            combi.add(new LinkedList<>(tempList));
+            combi.add(new ArrayList<>(tempList));
             return true;
         } else if ( sum>target){
             return false;
