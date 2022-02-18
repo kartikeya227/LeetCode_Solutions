@@ -13,8 +13,8 @@ class Solution {
             }
             stack.push(c);
         }
-        System.out.println(stack);
-      while(!stack.empty() && k > 0){
+        
+        while(!stack.empty() && k > 0){
             stack.pop();
             k--;
         }
@@ -22,9 +22,7 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         while(!stack.empty()){
             sb.append(stack.pop());
-        }
-        String ans = sb.reverse().toString();
-      
-        return ans;
+        }      
+        return sb.reverse().toString();
     }
 }
