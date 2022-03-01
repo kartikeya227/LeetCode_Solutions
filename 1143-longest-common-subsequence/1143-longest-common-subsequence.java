@@ -12,7 +12,6 @@ class Solution {
                     dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
             }
         }
-        
         return dp[text1.length()][text2.length()];
     }
 }
