@@ -17,10 +17,6 @@ class Solution {
     
     boolean isLogBaseTwo(int n, double two){
         double f = Math.log(n)/two;
-        if(n==8192){
-            System.out.println(f);
-            System.out.println(Math.log(n)/Math.log(2));
-        }
         if((f - (int)f) == 0.0)
             return true;
         return false;
